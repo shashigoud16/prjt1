@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+           
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         scroll-behavior: 3s;
+         margin: 70px;
+         transition-duration: 2s; */
+         .body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif(--main-font);
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none;
+}
+        .box1{
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            border: 2px solid white;
+            margin-bottom: 5%;
+        }
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: black;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+        h5{
+            /* border: 1px solid black;
+            border-radius: 25px;
+            background:whitesmoke;
+            height: 5vh; */
+            /* width:auto; */
+            /* font-size: medium; */
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:gainsboro;
+            
+        }
+        li:hover{
+            color: black;
+        }
+        .box2{
+           margin:2px 70px;
+        }
+        .box4{
+            margin: 150px 70px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif(--main-font);
+   
+        }
+        .box5{
+            margin: 70px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif(--main-font);
+   
+        }
+        img{
+            border-radius: 40px;
+        }
+        .l1{
+            position: relative;
+        }
+        .l2{
+            position: absolute;
+            top:40px;
+            left:100px;
+            font-size:80px;
+            color: white;
+            width: 580px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .l3{
+            position: absolute;
+            top: 400px;
+            left: 120px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: whitesmoke;
+            width: 500px;
+        }
+        .l4{
+            position: absolute;
+            bottom: 0px;
+            top: 500px;
+            font-size: xxx-large;
+            overflow: none;
+        }
+        .l5{
+            display: flex;
+            position: absolute;
+            bottom: 10px;
+            top:500px;
+            right: 100px;
+            border-radius: 10px white;
+           }
+           h1{
+            font-size: 35px;
+           }
+           .parent1{
+                display: flex;
+                justify-content: space-around;
+                padding: 3%;
+                gap: 20px;
+            }
+            .parent2{
+                display: flex;
+                justify-content: space-between;
+                padding: 3%;
+                gap: 20px;
+                
+            }
+            .child1{
+                 justify-content: space-between;
+                 border:1px solid white;
+                 padding: 12px;
+                 background-color:whitesmoke;
+                 border-radius: 10%;
+                 height: 30vh;
+               
+        }
+        .parent3{
+                display: flex;
+                justify-content: space-around;
+                padding: 3%;
+                gap: 20px;
+            }
+            .parent4{
+                display: flex;
+                justify-content: space-around;
+                padding: 3%;
+                gap: 20px;
+            }
+            .l6{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box6{
+                display: flex;
+                justify-content: space-between;
+                gap: 50px;
+                margin-top: 90px;
+                margin: 70px;
+            }
+            .box7{
+                margin-top: 10%;
+                margin: 70px;
+            }
+            .child6{
+                display: flex;
+                justify-content: space-between;
+        
+            }
+           .box8{
+            /* margin-top: 10%; */
+            margin: 70px 0px;
+           }
+           /* div.child7 {
+            background-color:white;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            } */
+        .child7{
+            display: flex;
+        }
+        div.child7 img {
+            padding: 10px;
+            height: 60vh;
+            width: 300px;
+        }
+        div.child6 img{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            
+        }
+        .l7{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box10{
+            margin-top: 20%;
+            display: flex;
+            gap: 50px;
+            margin: 70px;
+        }
+        .box11{
+            margin-top: 15%;
+            margin: 70px;
+        }
+        .l8{
+            display: flex;
+            color: white;
+            gap: 1%;
+        }
+        .l9{
+            color:white;
+            font-size: 20px;
+        }
+        .box13{
+            padding: 90px;
+        }
+        .l12{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .child11{
+            color: white;
+        }
+        .child10{
+            color: white;
+        }
+        .parent5{
+            display: flex;
+            gap: 10%;
+        }
+        .box12{
+            position: relative;
+        }
+        .child15{
+            border: 1px solid;
+            background:white;
+            /* margin: 0px 30px; */
+            position: absolute;
+            width: 500px;
+            top: -300px;
+            left: 300px;
+        }
+        .l13{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  margin: 30px 30px;
+  padding:1%;
+}
+.l14{
+  overflow: hidden;
+  align-items: center;
+  padding: 5%;
+}
+.btn-book {
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 100px;
+  place-content: center;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  background-color:black;
+  box-shadow:
+    inset  10px black;
+  color: #fff;
+  overflow: hidden;
+}
+
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div id="l1"></div>
+        <div data-aos="fade-down" class="box1">
+        <div style="display: flex;"><img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/678ded5a7c52fa60584a4fee_logo-dark.svg" alt="">
+        <h2>VISTAHAVEN</h2></div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l2">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l3">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l4">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l5">Agents</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+           </div>
+           <div>
+            <a class="nav-link" href="#l6"><button class="button">Contact Us Now
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button></a>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="l1"><img src="https://media.istockphoto.com/id/157674751/photo/island-villa-at-sunrise.jpg?s=170667a&w=0&k=20&c=yf7I8NSvSd2r222OICeQ1JOPjrkDJpgMrhgCNGN3dOU=" alt="" width="100%" height="500vh"></div>
+        <div data-aos="fade-left" class="l2">FIND YOUR PERFECT HOME TODAY</div>
+        <div data-aos="fade-left" class="l3"><p>We provide tailored real estate solutions, guiding you through every step with personalized experiences that meet your unique needs and aspirations.</p></div>
+        <div data-aos="fade-left" class="l4">
+            <ul>
+                <li>200+</li>
+                <li>70+</li>
+                <li>$10M+</li>
+            </ul>
+        </div>
+        <div class="l5">
+            <img src="data:image/jpeg;base64,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" alt=""width="40px" height="50vh">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="40px" height="50vh">
+            <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt=""width="40px" height="50vh">
+            <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fHww" alt=""width="40px" height="50vh">
+            <div><p>10+ Featured Agents</p>
+                <img src="https://media.istockphoto.com/id/1006074668/vector/five-stars-rating-vector-icon.jpg?s=612x612&w=0&k=20&c=SyV8wKdo-Xw_bP_1dQR_pyTIcBhpVcVEhcCO-J6Y2Xc=" alt="" width="140px" height="80px">
+            </div>
+        </div>
+    </div>
+        <div id="l2"  class="box4">
+        <center>
+            <h5>Why Choose Us</h5>
+        <h1 style="width: 590px;">EXPLORE OUR RANGE OF EXPERT REAL ESTATES SERVICES</h1></center>
+        
+        <div class="parent1">
+           <div  data-aos="zoom-out-up" class="child1">
+            <img style="width: 30px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/67873ed60376ba48e934cba3_IcOutlineHouse.svg" alt="">
+                <div><h3>Property Sales</h3>
+                <p>Expertly promoting and selling your property to attract qualified buyers.</p></div>
+            </div>
+            <div  data-aos="zoom-out-up" class="child1">
+                <img style="width: 30px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/67874762f37201dcc66878cc_IcOutlineMessage.svg" alt="">
+            <div>
+                <h3>Buyer Representation</h3>
+                <p>Guiding you through the home-buying process, prioritizing your interests.</p>
+            </div>
+            </div>
+            <div  data-aos="zoom-out-up" class="child1">
+                <img style="width: 30px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6787476214306e08567b0988_IcOutlineFolderCopy.svg" alt="">
+                <div>
+                    <h3>Rental Management</h3>
+                    <p>Managing tenant relations, maintenance, and finances to maximize rental returns.</p>
+                </div>
+            </div>
+        </div>
+        <div class="parent2">
+            <div  data-aos="zoom-out-up" class="child1">
+                <img style="width: 30px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/67874762ccac7ad291440bc8_IcTwotoneBarChart.svg" alt="">
+                <div>
+                    <h3>
+                        Investment Consulting</h3>
+                        <p>Providing strategic advice to help you capitalize on real estate opportunities.</p>
+                </div>
+            </div>
+            <div  data-aos="zoom-out-up" class="child1">
+                <img style="width: 30px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/678747628ce0d2e1e6d62e53_IcTwotoneSearch.svg" alt="">
+                <div>
+                    <h3>Property Valuation</h3>
+                    <p>Accurately assessing your property's value for sales, purchases, or investments.</p>
+                </div>
+            </div>
+    
+            <div  data-aos="zoom-out-up" class="child1">
+                <img style="width: 30px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/67874762e6cdd3f1de92fe76_IcOutlineHandshake.svg" alt="">
+                <div>
+                    <h3>Tailored Solutions</h3>
+                    <p>Delivering customized real estate services aligned with your specific goals.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="box5">
+        <h5 style="margin: 0px 70px;" id="l3">Featured Properties</h5>
+    <h1 style="width: 800px; font-size: 40px; margin: 0px 70px;">DISCOVER HOMES TAILORED TO YOUR LIFESTYLE AND NEEDS</h1>
+    <div class="parent3">
+            <div  data-aos="zoom-out" class="child2">
+                <img style="height: 65vh;width: 370px;" src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6787673905e3b068ab915da2_property-5-p-500.jpg" alt="">
+                <i style='font-size:24px' class='fas'>&#xf3c5</i>
+                <p>Bel Air, Los Angeles, California</p>
+                <div class="l6">
+                    <h3>Billionaire Mansion</h3>
+                    <p>$500,000</p>
+                </div>
+            </div>
+            <div  data-aos="zoom-out" class="child2">
+                <img style="height: 65vh;width: 370px;" src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/67876871db9290b4eec353ca_property-2-p-500.jpg" alt="">
+                <p>Beverly Hills, California</p>
+                <div class="l6">
+                    <h3>Palazzo di Amore</h3>
+                    <p>$490,000</p>
+                </div>
+            </div>
+            <div  data-aos="zoom-out" class="child2">
+                <img style="height: 65vh;width: 370px;" src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/678768eb2c5c35b7399d862a_property-4-p-500.jpg" alt="">
+            <p>Bel Air, Los Angeles, California</p>
+            <div class="l6">
+                <h3>The One</h3>
+                <p>$690,000</p>
+            </div>
+            </div>
+        </div>
+        <div class="parent4">
+            <div  data-aos="zoom-out" class="child2">
+                <img style="height: 65vh;width: 370px;" src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/67876ea22b88c5206a9f9956_property-6-p-500.jpg" alt="">
+                <p>Beverly Hills, California</p>
+                <div class="l6">
+                    <h3>The Beverly House</h3>
+                    <p>$290,000</p>
+                </div>
+            </div>
+            <div  data-aos="zoom-out" class="child2">
+                <img style="height: 65vh;width: 370px;" src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/67876e97b800277f3002a8e0_property-8-p-500.jpg" alt="">
+                <p>Holmby Hills, Los Angeles, California</p>
+                <div class="l6">
+                    <h3>The Manor</h3>
+                    <p>$482,000</p>
+                </div>
+            </div>
+            <div  data-aos="zoom-out" class="child2">
+                <img style="height: 65vh;width: 370px;" src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/678769f5b802b59e3c466adb_property-0-p-500.jpg" alt="">
+                <p>New York</p>
+                <div class="l6">
+                    <h3>New York The Penthouse at Central Park Tower</h3>
+                    <p>$298,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="l4" class="box6">
+    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           " data-aos="fade-left" class="child3">
+        <button>Who We Are</button>
+        <h1>Redefining Excellence in Real Estate</h1>
+        <p>Founded with a passion for exceptional living spaces, we specialize in luxury properties, green and sustainable homes, and vacation rentals</p>
+        <p>Our journey is defined by a commitment to quality, innovation, and client satisfaction.</p>
+    </div>
+    <div class="child4">
+        <img style="height: 80vh; width: 350px;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788a87b1d5db7654ca7e7cd_group-confident-businesspeople-office.jpg" alt="">
+    </div>
+    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           " class="child5">
+        <div data-aos="fade-right">
+            <h2>Our Vision</h2>
+            <p>To be a leader in the real estate market, offering unparalleled services in luxury, sustainability, and vacation properties. We aim to set new standards in excellence and client satisfaction.</p>
+        </div>
+        <div data-aos="fade-right">
+            <h2>Expert Team</h2>
+            <p>Our team comprises seasoned professionals with extensive experience in luxury real estate, sustainable housing, and vacation rentals.</p>
+        </div>
+        <div data-aos="fade-right">
+            <h2>Tailored Solutions</h2>
+            <p>We offer customized real estate services that align with your specific lifestyle and investment goals, ensuring a seamless and personalized experience.</p>
+        </div>
+    </div>
+   </div>
+   <div class="box7">
+    <center><h2>Check our best clients & partners</h2></center>
+    <div data-aos="zoom-out" class="child6">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f18_logoipsum-285.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f12_logoipsum-284.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f11_logoipsum-283.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f0c_logoipsum-280.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f10_logoipsum-259.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f17_logoipsum-253.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f16_logoipsum-220.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f0f_logoipsum-242.svg" alt="">
+    </div>
+    <div data-aos="zoom-out" class="child6">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f15_logoipsum-288.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f14_logoipsum-323.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f0a_logoipsum-330.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f0b_logoipsum-329.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f13_logoipsum-317.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f09_logoipsum-287.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f08_logoipsum-291.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6788b7c58b085eea2bc22f07_logoipsum-311.svg" alt="">
+    </div>
+   </div>
+   <div id="l5" class="box8">
+    <center>
+        <button>Meet Our Experts</button>
+        <h1 style="width: 630px;">PERSONALIZED GUIDANCE, PROVEN EXPERTISE</h1>
+    </center>
+    <div class="child7">
+        <marquee behaviour="" direction="left">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788ce7ba463c16f5207ef87_feature-agent-3-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788cdde59ed98fc94b57727_feature-agent-1-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6789cbc872061cb2483d232a_feature-agent-12-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788ce1ad5f602450d733f7c_feature-agent-7-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788cef838bc357c11134830_feature-agent-11-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788ce62d3368885a9082c63_feature-agent -8-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6789cbe7048e78441169bbed_feature-agent-14-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788ce9db6fe202c947e5156_feature-agent-9-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788ce32e3551bff56eb29ae_feature-agent-2-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788cdfe3449d7527c7c3749_feature-agent-6-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6788cee23d0f1a38274d4c9c_feature-agent-10-p-500.jpg" alt="">
+        <img src="https://cdn.prod.website-files.com/67875eb8de2529a75075fafd/6789cc25e6119c429e721456_feature-agent-13-p-500.jpg" alt="">
+        </marquee>
+    </div>
+   </div>
+   <div class="box10">
+    <div data-aos="fade-up" class="child8" style="width: 400px;">
+        <button>Help Center</button>
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+    </div>
+    <div style="display: block;" class="child9">
+        <div data-aos="fade-up" class="l7">
+            <h2>What is the process for buying a property?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p> The process involves selecting the right property, negotiating terms with the agent, signing the contract, and completing the payment. Our professional agents will guide you through every step to ensure a smooth experience.</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>How do I determine how much I can afford?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p> We recommend consulting with a mortgage specialist who can evaluate your income, expenses, and credit score to provide tailored advice.</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>What documents are required for renting a property?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p> Typically, you will need to provide identification, proof of income (e.g., pay stubs or bank statements), and rental history. Some landlords may also require a security deposit. </p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>Can I terminate a lease agreement early?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p>  This depends on the terms of your lease agreement. We recommend reviewing the early termination clauses before signing and discussing options with your landlord or agent.</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>What are the risks of investing in real estate?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p> Real estate investment risks may include market fluctuations, maintenance costs, and inconsistent occupancy rates. We offer professional market analysis to help you minimize these risks.</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>How do I choose the right property to invest in?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p>Based on your budget, target returns, and the growth potential of the area, we provide tailored property recommendations and detailed analysis reports.</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>Do high-end properties support virtual tours?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p>Yes, most of our luxury listings include virtual tour options, allowing you to conveniently explore property details online.</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="l7">
+            <h2>How long does the property transfer process take?</h2>
+            <div>
+                <details>
+                  <summary>+</summary>
+                  <p>Generally, it takes 30-60 days, depending on local regulations and loan approval timelines. We will assist you throughout the process to ensure everything goes smoothly</p>
+                </details>
+               </div>
+        </div>
+        <hr>
+    </div>
+   </div>
+   <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" id="l6" class="box11" style=" margin-top: 230px;">
+    <center>
+        <button>Get in Touch</button>
+        <h1 style="width: 800px;">LET'S MAKE YOUR PROPERTY JOURNEY EFFORTLESS</h1>
+        <p style="width: 800px;">Have questions or ready to take the next step? Whether you’re looking to buy, rent, or invest, our team is here to guide you every step of the way. Let’s turn your property goals into reality.</p>
+    </center>
+   </div>
+   <div class="box12" style="margin-top: 300px;">
+    <img style="width: 100%;" src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6789e453099e81e883a098fd_minimalist-architecture-space-(7)-p-1600.jpg" alt="">
+    <div  class="child15" style="border: 1px solid; margin: 100px; border-radius: 10%;">
+        <div class="l13">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+        <hr>
+        <div class="l13">
+          <input type="email" placeholder="Email">
+          <input type="number" placeholder="Phone">
+        </div>
+        <hr>
+        <div class="l13">
+          <input type="text" placeholder="What Can We Help You?">
+        </div>
+        <b><hr></b>
+        <center>
+        <div class="l14"><button class="btn-book">
+          <svg
+            width="400"
+            height="0"
+            viewBox="0 0 16 16"
+            fill="none"></svg>
+          <p>Book A Call</p>
+        </button>
+        </div>
+      </div>
+      
+      </div>
+   <footer style="background-color:black;" class="box13">
+    <div class="parent5">
+        <div class="child9">
+            <div class="l8">
+            <img src="https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/678ded5a7c52fa60584a4fee_logo-dark.svg" alt="">
+        <h1>VISTAHAVEN</h1>
+            </div>
+            <div class="l9">
+                <p>+1-800-555-1234</p>
+                <p>info@vistahaven.com</p>
+                <p>123 Serenity Boulevard, Greenwood Heights, NY 11222, United States</p>
+            </div>
+            <div class="l8">
+                <img width="40" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AjUtf2HQlUSEA1915SRYQhNdOmFj7owgUvkTL8Sio-52UAvpE9jrODlHIr1kZw0yTok&usqp=CAU" alt="">
+                <img width="40" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" alt="">
+                <img width="40" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSniyxNG3VjqTyWFFvatjlJAsnfD2GYHZtJuOygIFgekyulvucSS3FT3E_buuJaJQ4X75Y&usqp=CAU" alt="">
+            </div>
+        </div>
+        <div class="child10">
+            <h4>Navigation</h4>
+            <br>
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+                <div class="collapse navbar-collapse" id="navbarNav"></div>
+                  <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l2">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l3">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l4">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#l5">Agents</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#l6">Contact</a>
+                      </li>
+                    </li>
+                  </ul>
+              </nav>
+       
+        </div>
+        <div class="child11">
+            <h4>Admin</h4>
+            <br>
+            <p>Licensing</p>
+            <p>Style Guide</p>
+            <p>Change Log</p>
+        </div>
+    </div>
+        <hr style="color: #fff;">
+
+        <div class="l12">
+            <p>© Copyright 2024. All Rights Reserved by oldshen</p>
+            <p>Powered by Webflow</p>
+        </div>
+   
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+</body>
+</html> 
